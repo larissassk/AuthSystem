@@ -17,3 +17,9 @@ Este repositório contém a implementação de um sistema simples de **cadastro*
    
    ```bash
    mysql -u usuario -p nome_do_banco < caminho/para/database.sql
+
+
+### Tecnologias Utilizadas
+**PHP** para backend.  
+**MySQL** para banco de dados.  
+**HTML/CSS** para frontend.  
