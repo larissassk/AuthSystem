@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Roubbie</title>
+    <link rel="stylesheet" href="style.css"> <!-- Seu arquivo de estilo CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        <form id="formCadastro" method="POST" action="cadastro.php">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required placeholder="Escolha uma senha">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua senha">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Cadastrar</button>
+            </div>
+        </form>
+        <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+    </div>
+
+</body>
+</html>
