@@ -10,57 +10,42 @@
 
 /* Corpo da página */
 body {
-    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto */
-    background-color: #469baf; /* Cor alterada */
+    font-family: 'Roboto', sans-serif;
+    background-color: #469baf;
     display: flex;
-    justify-content: flex-start;  /* Alinha os itens à esquerda */
-    align-items: center;  /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Empilha o título e o contêiner */
+    flex-direction: column;
+    gap: 20px; /* Espaço controlado entre os elementos */
 }
 
 /* Título */
 h1 {
-    font-size: 2.5em;
-    margin-top: 80px; /* Ajuste do espaço entre o topo da tela e o título */
-    color: #f0f7f8; /* Cor alterada */
+    font-size: 2.2em;
+    color: #4B7B8A;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 20px; /* Adicionando um espaço abaixo do título */
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
 }
 
 /* Container principal */
 .container {
-    background-color: #f0f7f8; /* Cor alterada */
+    background-color: #fff;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-radius: 31px 31px 0 0; /* Arredonda apenas as bordas superiores */
+    border-radius: 31px;
     max-width: 400px;
-    height: auto;  /* Remove altura fixa */
-    min-height: 500px; /* Garante uma altura mínima */
-    text-align: center;
-    position: relative;
-    margin-top: auto; /* Empurra o contêiner para a parte inferior */
-}
-
-/* Container específico para login */
-.container.login {
-    height: 450px;  /* Ajusta a altura para o formulário de login */
-    min-height: auto;  /* Permite altura ajustável */
-    padding: 30px;
-}
-
-/* Estilo da estrela (ícone) */
-.star {
-    width: 80px;
-    height: 80px;
-    background-color: #F1C40F;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    position: absolute;
-    top: -40px; /* Colocando a estrela acima do formulário */
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: initial;
 }
 
 /* Estilo dos campos de input */
@@ -69,24 +54,31 @@ h1 {
 }
 
 .form-group input {
+    background-color: #e3faff;
     width: 100%;
     padding: 15px;
-    border: 2px solid #B4B4B4;
+    border: 2px solid #e3faff;
     border-radius: 10px;
     font-size: 16px;
-    margin-top: 10px;
     transition: border-color 0.3s;
 }
 
 .form-group input:focus {
-    border-color: #4B7B8A; /* Mudando a cor do foco */
+    border-color: #4B7B8A;
+}
+
+/* Estilo dos campos de label */
+.form-group label {
+    color: #469baf;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Botão */
 .btn {
     width: 100%;
     padding: 15px;
-    background-color: #d3e5eb; /* Cor do botão */
+    background-color: #469baf;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -96,17 +88,16 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #3A5B61; /* Hover no botão */
+    background-color: #3A5B61;
 }
 
 /* Links */
 p {
     text-align: center;
-    margin-top: 20px;
 }
 
 p a {
-    color: #ced6d8;
+    color: #469baf;
     text-decoration: none;
 }
 

@@ -7,31 +7,37 @@
     <link rel="stylesheet" href="style.css"> <!-- Seu arquivo de estilo CSS -->
 </head>
 <body>
-    <h1>Cadastro de <br>Usuário</h1>
-
+    <!-- <div id="logo">
+        <img src="img/logo.png"  width="286px" height="126px" alt="Logo Roubbie">
+    </div> -->
+    
     <div class="container">
+        <h1>Cadastro de <br>Usuário</h1>
+
         <form id="formCadastro" method="POST" action="cadastro.php">
             <div class="form-group">
-                <label for="name">Nome Completo:</label>
-                <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="">
             </div>
             <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="">
             </div>
             <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required placeholder="Escolha uma senha">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required placeholder="">
             </div>
             <div class="form-group">
-                <label for="confirm-password">Confirmar Senha:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua senha">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn">Cadastrar</button>
+                <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+
             </div>
+
         </form>
-        <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
     </div>
 
 </body>
